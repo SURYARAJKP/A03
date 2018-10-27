@@ -1,0 +1,88 @@
+
+#tag{
+	text-align: center;
+	font-size: 20px;
+}
+
+
+body{
+	background-image: url("download.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.profile{
+	height: 150px;
+	width: 150px;
+	margin-top: 50px;
+	border-radius: 50%;
+}
+
+.about{
+	margin-top: 90px;
+}
+
+
+
+#myNavbar li{
+    padding: 5px;
+}
+
+#myNavbar li img{
+	height: 30px;
+    width: 30px;
+    border-radius: 2px;
+    
+    
+}
+.T1  table,th,td{
+	
+    border : 2px solid black;
+    align-items: center;
+    align-content: center;
+    color: aliceblue;
+}
+.T1{
+	
+    margin-right : auto;
+    align-items: center;
+    align-content: center;
+    color: aliceblue;
+}
+.tab{
+    padding-left: 400px;
+}
+.li{
+	font-size : 15px;
+	border-color : white;
+	max-width : 550px;
+	font-family : Lucida Calligraphy;
+	text-align : left;
+	margin-left : 50px;
+}
+.h{
+	font-size : 20px;
+	border-color : white;
+	max-width : 550px;
+	font-family : italic;
+	text-decoration: underline;
+	margin-right : auto;
+
+}
+p{
+    font-size : 20px;
+   color: aliceblue;
+	font-family : Lucida Calligraphy;
+	margin-left : 50px;
+}
+
+.container{
+margin:50px;
+
+}
+
+.calculator{
+padding-top: 200px;
+padding-left:500px;
+}
