@@ -34,29 +34,32 @@ app.use(logger('dev'));
 app.use(logger('combined', { stream: accessLogStream }));
 
 
-// 4 handle valid GET requests
-//  
+//4 handle valid GET requests
+app.get("/", function (req, res) {
+ //res.sendFile(path.join(__dirname + '/assets/index.html'))
+ res.render("index.ejs")
+})
 app.get("/index", function (req, res) {
   res.render("index.ejs")
-})
-
+ })
+ 
 // 4 http GET /calculator
 app.get("/calculator", function (req, res) {
-  res.render("calculator.ejs")
+ res.render("calculator.ejs")
 })
 
 // 4 http GET /ContactUs
-app.get("contact-us", function (req, res) {
-  res.render("contact-us.ejs")
+app.get("/contact-us", function (req, res) {
+ res.render("contact-us.ejs")
 })
 
 app.get("/aboutus", function (req, res) {
-  res.render("about-us.ejs")
+ res.render("about-us.ejs")
 })
 
 
 
-
+ 
 
 
 
@@ -64,35 +67,35 @@ app.get("/aboutus", function (req, res) {
 app.post("/contact-us.html", function (req, res) {
   var api_key = '9dc39d3715386b89dc8aead0e6adaaa9-4836d8f5-c394ac64';
   var domain = 'sandbox0d2aa3be8dde4182aff8f494e27085a0.mailgun.org';
-  var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
-
+  var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+   
   var data = {
     from: 'cal App user<postmaster@sandbox1efc7e9a2bb247e89ea29eaaa62ff931.mailgun.org>',
     to: 'suryarajkp@gmail.com',
     subject: req.body.firstname + " Sent you a message",
     text: req.body.subject
   };
-
+   
   mailgun.messages().send(data, function (error, body) {
     console.log(body);
-    if (!error) {
+    if(!error){
       res.send("Mail sent");
     }
-    else {
+    else{
       res.send("Not send");
     }
   });
 
 
-})
+ })
 
-app.get(function (req, res) {
-  res.render("404")
-})
+ app.get(function(req, res){
+   res.render("404")
+ })
 
 
 // Listen for an application request on designated port
 app.listen(process.env.PORT || 8081, function () {
-  console.log('Web app started and listening on http://localhost:' + 8081)
+ console.log('Web app started and listening on http://localhost:' + 8081)
 })
 
