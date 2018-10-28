@@ -1,0 +1,19 @@
+{
+    "name": "a03",
+    "version": "0.0.1",
+    "description": "resume app",
+    "main": "app.js",
+    "dependencies": {
+        "express": "latest",
+        "morgan": "latest",
+        "body-parser": "latest",
+        "ejs": "latest"
+    },
+    "author": "Denise Case",
+    "homepage": "https://bitbucket.org/S534092/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SURYARAJKP"
+    },
+    "license": "Apache-2.0"
+}

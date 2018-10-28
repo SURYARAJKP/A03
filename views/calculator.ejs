@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SURYA RAJ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="Index.html">SURYA RAJ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="calculator.html">Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ContactUs.html">ContactUs</a>
+              </li>
+
+          </ul>
+          </div>
+          </nav> -->
+          <% include header %>
+<div class="calculator">
+<table cellSpacing=0 cellPadding=0 width=250 border=0>
+
+  <form name=cminch method="post">
+          <tbody>
+          <tr>
+            <td>
+              <font face="Arial Narrow"><INPUT 
+              onblur=cmconvert() value=2.54 name=cm> </font><font face="Arial Narrow" 
+          size=-1>cm</font></td>
+              </tr>
+          <tr>
+            <td>
+              <font face="Arial Narrow"><INPUT 
+              onblur=feetconvert() value=0 name=feet> </font><font face=Arial 
+              size=-1>feet</font></td>
+          </tr>
+          <tr>
+            <td>
+              <font face="Arial Narrow"><INPUT 
+              onblur=inchconvert() value=1 name=inch> </font><font face=Arial 
+          size=-1>inch</font></td>
+          </tr
+          <tr>
+            <td width="50%">
+                <p align="center"><input type="button" value="Submit" name="B3"></p>
+            </td>
+          </td></tbody></form></table>
+        <p align="left">
+        <font face="Arial Narrow" size="2">Note: 1 Inch = 2.54 cm, 1 Feet = 30.48 cm, 1 
+        Feet = 12 Inch</font>
+        <BR>
+        </div>
+        <% include footer %>
+
+
