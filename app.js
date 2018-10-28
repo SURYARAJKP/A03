@@ -17,7 +17,7 @@ const http = require('http').Server(app)  // inject app into the server
 // Listen for an application request on port 8081
 
 // 1 set up the view engine
-app.set("Views", path.resolve(__dirname, "views")) // path to views
+app.set("views", path.resolve(__dirname, "views")) // path to views
 app.set("view engine", "ejs") // specify our view
 
 // 2 include public assets and use bodyParser
@@ -37,7 +37,7 @@ app.use(logger('combined', { stream: accessLogStream }));
 // 4 handle valid GET requests
 app.get("/", function (req, res) {
  //res.sendFile(path.join(__dirname + '/assets/index.html'))
- res.render("Index.ejs")
+ res.render("index.ejs")
 })
 app.get("/index", function (req, res) {
   res.render("index.ejs")
@@ -49,8 +49,8 @@ app.get("/calculator", function (req, res) {
 })
 
 // 4 http GET /ContactUs
-app.get("/ContactUs", function (req, res) {
- res.render("ContactUs.ejs")
+app.get("contact-us", function (req, res) {
+ res.render("contact-us.ejs")
 })
 
 app.get("/aboutus", function (req, res) {
@@ -64,7 +64,7 @@ app.get("/aboutus", function (req, res) {
 
 
 // 5 handle valid POST request
-app.post("/ContactUs.html", function (req, res) {
+app.post("/contact-us.html", function (req, res) {
   var api_key = '9dc39d3715386b89dc8aead0e6adaaa9-4836d8f5-c394ac64';
   var domain = 'sandbox0d2aa3be8dde4182aff8f494e27085a0.mailgun.org';
   var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
@@ -89,6 +89,9 @@ app.post("/ContactUs.html", function (req, res) {
 
  })
 
+ app.get(function(req, res)){
+   res.render("404")
+ })
 
 
 // Listen for an application request on designated port
