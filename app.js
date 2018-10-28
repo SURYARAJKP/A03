@@ -17,7 +17,7 @@ const http = require('http').Server(app)  // inject app into the server
 // Listen for an application request on port 8081
 
 // 1 set up the view engine
-app.set("views", path.resolve(__dirname, "views")) // path to views
+app.set("Views", path.resolve(__dirname, "views")) // path to views
 app.set("view engine", "ejs") // specify our view
 
 // 2 include public assets and use bodyParser
