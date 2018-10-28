@@ -40,7 +40,7 @@ app.get("/", function (req, res) {
  res.render("Index.ejs")
 })
 app.get("/index", function (req, res) {
-  res.render("Index.ejs")
+  res.render("index.ejs")
  })
  
 // 4 http GET /calculator
@@ -91,12 +91,8 @@ app.post("/ContactUs.html", function (req, res) {
 
 
 
-app.listen(port, function () {
- console.log('Web app started and listening on http://localhost:' + port)
-})
-
 // Listen for an application request on designated port
-app.listen(process.env.PORT, function () {
- console.log('Web app started and listening on http://localhost:' + port)
+app.listen(process.env.PORT || 8081, function () {
+ console.log('Web app started and listening on http://localhost:' + 8081)
 })
 
