@@ -1,0 +1,52 @@
+#tag{
+	text-align: center;
+	font-size: 20px;
+}
+
+
+body{
+	background-image: url("download.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.profile{
+	height: 150px;
+	width: 150px;
+	margin-top: 50px;
+	border-radius: 50%;
+}
+
+.about{
+	margin-top: 90px;
+}
+
+
+
+#myNavbar li{
+    padding: 5px;
+}
+
+#myNavbar li img{
+	height: 30px;
+    width: 30px;
+    border-radius: 2px;
+    
+    
+}
+.T1  table,th,td{
+	
+    border : 2px solid black;
+    align-items: center;
+    align-content: center;
+    color: aliceblue;
+}
+.T1{
+	
+    margin-right : auto;
+    align-items: center;
+    align-content: center;
+    color: aliceblue;
+}
+.tab{
