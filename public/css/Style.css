@@ -6,7 +6,7 @@
 
 
 body{
-	background-image: url("download.jpg");
+	background-image: url("/images/download.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 
