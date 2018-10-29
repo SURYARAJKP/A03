@@ -4,7 +4,8 @@ const logger = require("morgan")
 const bodyParser = require("body-parser") // simplifies access to request body
 const fs = require('fs')  // NEW - this is required
 const app = express()  // make express app
-const http = require('http').Server(app)  // inject app into the server
+//const http = require('http').Server(app)  // inject app into the server
+const port = process.env.PORT||8081
 
 // ADD THESE COMMENTS AND IMPLEMENTATION HERE 
 // 1 set up the view engine
@@ -60,7 +61,7 @@ app.get("/aboutus", function (req, res) {
 })
 
 // 5 handle valid POST request
-app.post("/contact-us.html", function (req, res) {
+app.post("/contact-us", function (req, res) {
   var api_key = '9dc39d3715386b89dc8aead0e6adaaa9-4836d8f5-c394ac64';
   var domain = 'sandbox0d2aa3be8dde4182aff8f494e27085a0.mailgun.org';
   var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
@@ -85,11 +86,8 @@ app.post("/contact-us.html", function (req, res) {
 
  })
 
-<<<<<<< HEAD
+ 
  app.get(function(req, res){
-=======
- app.get(function(req, res)){
->>>>>>> a3d4d4daff530b3b238aa2548dd1cba9f4b0beeb
    res.render("404")
  })
 
