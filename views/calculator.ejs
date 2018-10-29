@@ -35,12 +35,7 @@
     howMuch = percent*document.percentage.howMuch.value;
     document.percentage.output.value = howMuch;
     }
-    // function rateCalculator() {
-    // inputNumber = document.percentage.inputNumber.value;
-    // number = document.percentage.number.value;
-    // percentOutput = (a/b)/100;
-    // document.percentage.percentOutput.value = percentOutput
-    // }
+
   </script>
 
 
@@ -49,16 +44,12 @@
         <tr>
            <td align=middle colSpan=3><B><FONT size=4>Percentage Calculator</FONT></B> 
            </td>
-        <tr>
+          </tr>
+          <tr>
            <td>What is <input size=5 name=percent> % of <INPUT size=5 name=howMuch>?</td>
            <td>Answer: <input maxLength=50 size=9 name=output></td>
            <td><input onclick=percentageCalculator() type=button value=Calculate></td>
         </tr>
-        <!-- <tr>
-           <td><input size=5 name=inputNumber> is what percent of <INPUT size=5 name= number>?</td>
-           <td>Answer: <input size=5 name=percentOutput> %</td>
-           <td><input onclick=rateCalculator() type=button value=Calculate></td>
-        </tr> -->
         <tr>
            <td align=middle colSpan=3>
               <input type=reset value=Reset>
