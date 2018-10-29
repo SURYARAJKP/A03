@@ -1,4 +1,4 @@
-function percentageCalculator() {
+<!-- function percentageCalculator() {
   percent = document.percentage.percent.value/100;
   howMuch = percent*document.percentage.howMuch.value;
   document.percentage.output.value = howMuch;
@@ -9,8 +9,7 @@ function percentageCalculator() {
   percentOutput = (a/b)/100;
   document.percentage.percentOutput.value = percentOutput
   }
-  //-->
-  </SCRIPT>
+  -->
   <!-- <FORM name=form1 method="post">
      <TABLE cellSpacing=1 cellPadding=1 border=1>
        <TBODY>
@@ -30,6 +29,21 @@ function percentageCalculator() {
          <TD align=middle 
      colSpan=3><INPUT type=reset value=Reset></TD></TR></TBODY></TABLE></FORM> -->
   <% include header %>
+  <script type="text/javascript">
+  function percentageCalculator() {
+    percent = document.percentage.percent.value/100;
+    howMuch = percent*document.percentage.howMuch.value;
+    document.percentage.output.value = howMuch;
+    }
+    function rateCalculator() {
+    inputNumber = document.percentage.inputNumber.value;
+    number = document.percentage.number.value;
+    percentOutput = (a/b)/100;
+    document.percentage.percentOutput.value = percentOutput
+    }
+  </script>
+
+
   <form name=percentage>
      <table>
         <tr>
