@@ -49,19 +49,15 @@ app.get("/calculator", function (req, res) {
 })
 
 // 4 http GET /ContactUs
+
 app.get("/contact-us", function (req, res) {
+
  res.render("contact-us.ejs")
 })
 
 app.get("/aboutus", function (req, res) {
  res.render("about-us.ejs")
 })
-
-
-
- 
-
-
 
 // 5 handle valid POST request
 app.post("/contact-us.html", function (req, res) {
@@ -89,7 +85,11 @@ app.post("/contact-us.html", function (req, res) {
 
  })
 
+<<<<<<< HEAD
  app.get(function(req, res){
+=======
+ app.get(function(req, res)){
+>>>>>>> a3d4d4daff530b3b238aa2548dd1cba9f4b0beeb
    res.render("404")
  })
 
